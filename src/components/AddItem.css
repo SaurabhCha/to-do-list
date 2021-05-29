@@ -1,0 +1,15 @@
+.title{
+    font-size: 30px;
+    margin: 30px;
+}
+
+.input{
+    width: 50%;
+    height: 2rem;
+}
+
+.addButton{
+    display: inline;
+    margin: 5px;
+    height: 2rem;
+}
