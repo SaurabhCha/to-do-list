@@ -1,6 +1,7 @@
 .title{
-    font-size: 30px;
+    font-size: 50px;
     margin: 30px;
+    font-style: italic;
 }
 
 .input{
@@ -12,4 +13,12 @@
     display: inline;
     margin: 5px;
     height: 2rem;
+    background-color: #0099cc;
+    border: 0;
+    border-radius: 5px;
+    width: 10%;
 }
+.addButton:hover {
+    background-color: #47d147;
+    color: white;
+  }

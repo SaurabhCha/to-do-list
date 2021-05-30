@@ -14,15 +14,17 @@ function AddItem(props) {
     }
     const keyHandler = (event) => {
         if (event.key === 'Enter') {
-            console.log('enter press here! ')
+            props.add({ id: Math.floor(Math.random() * 100000), data: data.current.value, completed: false });
+            data.current.value = "";
         }
+        
     }
 
     return (
         <React.Fragment>
             <div className="title">To do list</div>
-            <input type="text" ref={data} className="input" />
-            <button className="addButton" onClick={addHandler} onKeyDown={keyHandler}>Add item</button>
+            <input type="text" ref={data} className="input"  onKeyDown={keyHandler}/>
+            <button className="addButton" onClick={addHandler}>Add item</button>
         </React.Fragment>
     )
 

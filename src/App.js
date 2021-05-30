@@ -10,6 +10,7 @@ function App() {
   const add = (data) =>{
       setItem(data)
   }
+  
   return (
     <div className="App">
       <AddItem add={add}/>
